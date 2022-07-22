@@ -1,7 +1,8 @@
 require("./db/connection");
 const yargs = require("yargs");
 const mongoose = require("mongoose");
-const { createMovie, readMovie, updateMovie, deleteMovie, findMovie, createTV, readTV, updateTV, deleteTV, findTV } = require("./movie/functions");
+const { createMovie, readMovie, updateMovie, deleteMovie, findMovie } = require("./movie/functions");
+const { createTV, readTV, updateTV, deleteTV, findTV } = require("./tvshows/functions");
 
 // NOTE --something will be using the movie model. --somethingTV will be using the TV model. TV should also be a suffix
 // process.exit();
